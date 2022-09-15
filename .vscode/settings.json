@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 使用prettier进行格式化
+  "editor.formatOnSave": true, // 在保存时候自动格式化
+  "editor.formatOnType": true, // 在回车换行时自动格式化本行
+  "editor.formatOnPaste": false, // 在粘贴时候自动格式化
+  // 在保存的时候执行的操作
+  "editor.codeActionsOnSave": {
+    // 保存时用eslint格式化
+    "source.fixAll.eslint": true
+  }
+}
