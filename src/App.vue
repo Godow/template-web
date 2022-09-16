@@ -13,10 +13,21 @@
 </template>
 
 <script>
-import layout from "@/components/layout/index.vue";
+import layout from "comp/layout/index.vue";
+import axios from "axios";
 export default {
   components: {
     layout,
+  },
+  mounted() {
+    axios
+      .get("/api/get")
+      .then(res => {
+        console.log("get data:", res.data);
+      })
+      .catch(e => {
+        console.log("error:", e);
+      });
   },
 };
 </script>
